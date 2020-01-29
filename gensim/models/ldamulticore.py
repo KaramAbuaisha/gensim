@@ -92,7 +92,8 @@ from gensim.models.ldamodel import LdaModel, LdaState
 
 import six
 from six.moves import queue, range
-from multiprocessing import Pool, Queue, cpu_count
+from multiprocessing import Queue, cpu_count
+from pathos.multiprocessing import ProcessingPool as Pool
 
 logger = logging.getLogger(__name__)
 
